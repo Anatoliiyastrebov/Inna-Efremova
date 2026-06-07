@@ -1,38 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80" role="img" aria-label="Inna Efremova wellness logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" width="220" height="64" role="img" aria-label="Инна — Wellness">
   <defs>
-    <linearGradient id="petal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f7d57c" />
-      <stop offset="45%" stop-color="#ef9f58" />
-      <stop offset="100%" stop-color="#d6674d" />
-    </linearGradient>
-    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8cc7a2" />
-      <stop offset="100%" stop-color="#3f7f64" />
-    </linearGradient>
-    <linearGradient id="word" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2b5d4a" />
-      <stop offset="100%" stop-color="#5a8d77" />
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#85b89a"/>
+      <stop offset="100%" stop-color="#4d7c6a"/>
     </linearGradient>
   </defs>
 
-  <g transform="translate(8,8)">
-    <rect x="0" y="0" width="62" height="62" rx="18" fill="#fffaf1" />
-    <g transform="translate(31,31)">
-      <path d="M0 -20 C7 -20 11 -13 11 -6 C11 0 6 6 0 6 C-6 6 -11 0 -11 -6 C-11 -13 -7 -20 0 -20 Z" fill="url(#petal)" />
-      <path d="M20 0 C20 7 13 11 6 11 C0 11 -6 6 -6 0 C-6 -6 0 -11 6 -11 C13 -11 20 -7 20 0 Z" fill="url(#petal)" transform="rotate(90)" />
-      <path d="M0 20 C7 20 11 13 11 6 C11 0 6 -6 0 -6 C-6 -6 -11 0 -11 6 C-11 13 -7 20 0 20 Z" fill="url(#petal)" transform="rotate(180)" />
-      <path d="M-20 0 C-20 7 -13 11 -6 11 C0 11 6 6 6 0 C6 -6 0 -11 -6 -11 C-13 -11 -20 -7 -20 0 Z" fill="url(#petal)" transform="rotate(270)" />
-      <circle cx="0" cy="0" r="8" fill="#fff1d0" />
-      <path d="M-7 14 C-3 10 3 10 7 14 C5 21 1 25 -1 25 C-3 25 -5 22 -7 14 Z" fill="url(#leaf)" />
-    </g>
+  <!-- Icon: minimalist leaf/sprout -->
+  <g transform="translate(4, 6)">
+    <!-- Left leaf -->
+    <path d="M26 26 C18 20 10 10 16 4 C22 8 26 18 26 26 Z" fill="url(#leafGrad)" opacity="0.85"/>
+    <!-- Right leaf -->
+    <path d="M26 26 C34 20 42 10 36 4 C30 8 26 18 26 26 Z" fill="url(#leafGrad)"/>
+    <!-- Stem -->
+    <line x1="26" y1="26" x2="26" y2="48" stroke="#4d7c6a" stroke-width="2" stroke-linecap="round"/>
+    <!-- Small roots -->
+    <path d="M26 48 C22 44 16 44 14 46" stroke="#85b89a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M26 48 C30 44 36 44 38 46" stroke="#85b89a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
   </g>
 
-  <g transform="translate(84, 0)">
-    <text x="0" y="32" font-family="Trebuchet MS, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="url(#word)" letter-spacing="0.3">
-      ИННА
-    </text>
-    <text x="0" y="52" font-family="Trebuchet MS, Segoe UI, sans-serif" font-size="15" font-weight="600" fill="#5a8d77" letter-spacing="0.5">
-      Wellness
-    </text>
-  </g>
+  <!-- Text: ИННА -->
+  <text x="62" y="30" font-family="'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif" font-size="22" font-weight="700" fill="#3a5a48" letter-spacing="3">ИННА</text>
+  <!-- Divider -->
+  <rect x="62" y="36" width="148" height="1" fill="#85b89a" opacity="0.4"/>
+  <!-- Text: wellness -->
+  <text x="63" y="52" font-family="'Trebuchet MS', 'Gill Sans', system-ui, sans-serif" font-size="12" font-weight="400" fill="#85b89a" letter-spacing="4">WELLNESS</text>
 </svg>

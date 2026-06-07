@@ -1,22 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nina favicon">
-  <defs>
-    <linearGradient id="fav-petal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f7d57c" />
-      <stop offset="55%" stop-color="#ef9f58" />
-      <stop offset="100%" stop-color="#d6674d" />
-    </linearGradient>
-    <linearGradient id="fav-leaf" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8cc7a2" />
-      <stop offset="100%" stop-color="#3f7f64" />
-    </linearGradient>
-  </defs>
-  <rect x="4" y="4" width="56" height="56" rx="17" fill="#fffaf1" />
-  <g transform="translate(32,30)">
-    <ellipse cx="0" cy="-11" rx="7" ry="10" fill="url(#fav-petal)" />
-    <ellipse cx="11" cy="0" rx="7" ry="10" fill="url(#fav-petal)" transform="rotate(90 11 0)" />
-    <ellipse cx="0" cy="11" rx="7" ry="10" fill="url(#fav-petal)" />
-    <ellipse cx="-11" cy="0" rx="7" ry="10" fill="url(#fav-petal)" transform="rotate(90 -11 0)" />
-    <circle cx="0" cy="0" r="5" fill="#fff1d0" />
-    <path d="M-6 12 C-2 9 2 9 6 12 C4 18 1 21 0 21 C-1 21 -4 18 -6 12 Z" fill="url(#fav-leaf)" />
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Rounded background -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#f0f7f2"/>
+
+  <!-- Left leaf -->
+  <path d="M32 38 C22 30 14 18 22 8 C28 13 32 26 32 38 Z" fill="#4d7c6a"/>
+  <!-- Right leaf (lighter) -->
+  <path d="M32 38 C42 30 50 18 42 8 C36 13 32 26 32 38 Z" fill="#85b89a"/>
+  <!-- Stem -->
+  <line x1="32" y1="38" x2="32" y2="56" stroke="#4d7c6a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Root left -->
+  <path d="M32 54 C27 50 20 50 18 52" stroke="#85b89a" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <!-- Root right -->
+  <path d="M32 54 C37 50 44 50 46 52" stroke="#85b89a" stroke-width="1.8" stroke-linecap="round" fill="none"/>
 </svg>

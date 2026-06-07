@@ -1,6 +1,6 @@
 .form-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #faf8f5 0%, #f0ebe5 50%, #e8f0e8 100%);
+  background: linear-gradient(160deg, #fdfaf6 0%, #f4ede3 55%, #ecf4ee 100%);
   position: relative;
   overflow: hidden;
   animation: fadeIn 0.6s ease-out;
@@ -13,10 +13,9 @@
   right: -15%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(168, 197, 168, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(133, 184, 154, 0.1) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
-  animation: pulse 8s ease-in-out infinite;
 }
 
 .form-container::after {
@@ -26,10 +25,9 @@
   left: -10%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(107, 125, 107, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(77, 124, 106, 0.08) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
-  animation: pulse 10s ease-in-out infinite;
 }
 
 .form-header {
@@ -84,11 +82,12 @@
 }
 
 .form-title-section h1 {
+  font-family: 'Playfair Display', 'Palatino Linotype', Georgia, serif;
   font-size: 36px;
-  color: #4a5a4a;
+  color: #3d4f45;
   margin: 0;
   font-weight: 600;
-  background: linear-gradient(135deg, #4a5a4a 0%, #6b7d6b 100%);
+  background: linear-gradient(135deg, #3d4f45 0%, #4d7c6a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -105,28 +104,10 @@
   overflow: hidden;
 }
 
-.questionnaire-form::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(168, 197, 168, 0.05), transparent);
-  animation: shimmer 3s ease-in-out infinite;
-}
 
 .question-field {
   margin-bottom: 32px;
-  animation: fadeIn 0.5s ease-out both;
 }
-
-.question-field:nth-child(1) { animation-delay: 0.3s; }
-.question-field:nth-child(2) { animation-delay: 0.4s; }
-.question-field:nth-child(3) { animation-delay: 0.5s; }
-.question-field:nth-child(4) { animation-delay: 0.6s; }
-.question-field:nth-child(5) { animation-delay: 0.7s; }
-.question-field:nth-child(n+6) { animation-delay: 0.8s; }
 
 .question-label {
   display: block;
@@ -160,7 +141,7 @@
 .form-textarea:focus,
 .form-select:focus {
   outline: none;
-  border-color: #a8c5a8;
+  border-color: #85b89a;
   box-shadow: 0 0 0 4px rgba(168, 197, 168, 0.1), 0 4px 12px rgba(107, 125, 107, 0.1);
   transform: translateY(-2px);
 }
@@ -206,7 +187,7 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-  accent-color: #6b7d6b;
+  accent-color: #4d7c6a;
 }
 
 .file-upload {
@@ -226,11 +207,11 @@
   gap: 12px;
   padding: 24px;
   background: linear-gradient(135deg, #faf8f5 0%, #f0ebe5 100%);
-  border: 2px dashed #a8c5a8;
+  border: 2px dashed #85b89a;
   border-radius: 12px;
   cursor: pointer;
   text-align: center;
-  color: #6b7d6b;
+  color: #4d7c6a;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -253,7 +234,7 @@
 
 .file-label:hover {
   background: linear-gradient(135deg, #f0ebe5 0%, #e8f0e8 100%);
-  border-color: #6b7d6b;
+  border-color: #4d7c6a;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(107, 125, 107, 0.15);
 }
@@ -303,7 +284,7 @@
 
 .file-item:hover {
   background: linear-gradient(135deg, #faf8f5 0%, #f0ebe5 100%);
-  border-color: #a8c5a8;
+  border-color: #85b89a;
   transform: translateX(4px);
 }
 
@@ -326,7 +307,7 @@
 .conditional-fields {
   margin-top: 20px;
   padding-left: 20px;
-  border-left: 3px solid #a8c5a8;
+  border-left: 3px solid #85b89a;
 }
 
 /* Составные поля (group) */
@@ -346,7 +327,7 @@
 .grouped-field-label {
   font-size: 14px;
   font-weight: 600;
-  color: #6b7d6b;
+  color: #4d7c6a;
 }
 
 /* Числовые поля с единицами измерения */
@@ -399,7 +380,7 @@
 }
 
 .field-hint.hint-success {
-  color: #6b7d6b;
+  color: #4d7c6a;
   background: rgba(168, 197, 168, 0.15);
   border: 1px solid rgba(168, 197, 168, 0.3);
 }
@@ -428,7 +409,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #a8c5a8 0%, #6b7d6b 100%);
+  background: linear-gradient(90deg, #85b89a 0%, #4d7c6a 100%);
 }
 
 .contact-field .question-label {
@@ -476,7 +457,7 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-  accent-color: #6b7d6b;
+  accent-color: #4d7c6a;
 }
 
 .form-navigation {
@@ -499,8 +480,9 @@
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #a8c5a8 0%, #6b7d6b 100%);
+  background: linear-gradient(135deg, #5a9478 0%, #3d6b59 100%);
   color: #fff;
+  letter-spacing: 0.3px;
   position: relative;
   overflow: hidden;
 }

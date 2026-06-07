@@ -13,12 +13,8 @@ const CONTACT_FORM_KEYS = new Set([
 ]);
 
 const TELEGRAM_API_BASE_PATH = '/api/telegram';
-const TELEGRAM_REQUEST_TIMEOUT_MS = 300000;
+const TELEGRAM_REQUEST_TIMEOUT_MS = 30000;
 const TELEGRAM_FILE_MAX_SIZE = 50 * 1024 * 1024;
-
-function isRelayConfigured(): boolean {
-  return true;
-}
 
 async function postToRelay(
   endpoint: 'sendMessage' | 'sendDocument',
@@ -74,10 +70,6 @@ function buildQuestionLabelMap(questionnaireId: string): Map<string, string> {
  */
 async function sendFileToTelegram(file: File, caption?: string): Promise<boolean> {
   try {
-    if (!isRelayConfigured()) {
-      return false;
-    }
-
     // Проверка размера файла (Telegram лимит: 50MB для документов)
     if (file.size > TELEGRAM_FILE_MAX_SIZE) {
       console.error(`File ${file.name} is too large: ${(file.size / 1024 / 1024).toFixed(2)}MB (max: 50MB)`);
@@ -489,10 +481,6 @@ export async function sendToTelegram(
   formData: Record<string, any>
 ): Promise<boolean> {
   try {
-    if (!isRelayConfigured()) {
-      return false;
-    }
-
     if (!hasAtLeastOneValidContact(formData)) {
       console.warn('sendToTelegram: нет ни одного валидного способа связи');
       return false;
